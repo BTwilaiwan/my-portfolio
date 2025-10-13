@@ -1,0 +1,13 @@
+
+.img-circle{
+    width: 80%;    
+    height: 80%;    
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block; 
+    padding: 10px;
+    border-top: 2px solid var(--color-pastel-rose);
+    border-bottom: 2px solid var(--color-pastel-blue);
+    border-right: 2px solid var(--color-pastel-purple);
+    border-left: 2px solid var(--color-pastel-yellow);
+}
