@@ -1,0 +1,11 @@
+mat-toolbar button span {
+    font-size: 18px;
+}
+
+mat-toolbar button.mat-button-pink {
+    color: var(--color-primary-light) !important;
+}
+mat-toolbar button.mat-button-pink:hover {
+    background-color: var(--color-pastel-rose) !important;
+    color: var(--color-primary-light) !important;
+}
