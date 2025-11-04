@@ -6,8 +6,24 @@
     object-fit: cover; 
     display: block; 
     padding: 10px;
-    border-top: 2px solid var(--color-pastel-rose);
-    border-bottom: 2px solid var(--color-pastel-blue);
-    border-right: 2px solid var(--color-pastel-purple);
-    border-left: 2px solid var(--color-pastel-yellow);
+    border: 2px solid var(--color-light-beige);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--color-text-purple), var(--color-text-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.text-dark-light {
+    color: var(--color-text-dark-light);
+}
+
+.gradient-btn- {
+    background: linear-gradient(90deg, var(--color-text-purple), var(--color-text-pink));
+}
+
+html {
+  scroll-behavior: smooth;
 }
