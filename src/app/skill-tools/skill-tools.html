@@ -1,31 +1,140 @@
-<div class="content-section min-h-[100vh] flex justify-center items-center">
+<div class="flex justify-center items-center">
     <div class="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12">
-        <div class="col-span-9 flex items-center justify-center">
-            <p-carousel #carouse [value]="skillList" [numVisible]="3" [numScroll]="3" [responsiveOptions]="responsiveOptions">
-                <ng-template pTemplate="item" let-skill>
-                
-                    <div class="grid grid-cols-12 card-skill">
-                        <span class="col-span-12 flex justify-center mt-2 text-[16px]">{{ skill.header }}</span>
-                        <ng-content *ngFor="let item of skill.programming">
-                            <div class="col-span-4 mt-3">
-                                <img class="skill-logo" src="{{item.image}}" alt="">
-                            </div>
-                        </ng-content>
-                    </div>
-                </ng-template>
-            </p-carousel>
-        </div>
-        <div class="col-span-9 flex items-center justify-center">
-            <ng-container *ngFor="let skill of skillList">
+        <!-- <p-carousel #carouse class="col-span-12" [value]="skillList" [numVisible]="3" [numScroll]="3" [responsiveOptions]="responsiveOptions">
+            <ng-template pTemplate="item" let-skill>
                 <div class="grid grid-cols-12 cardProgram">
-                    <span class="col-span-12 flex justify-center mt-2 text-[16px]">{{ skill.header }}</span>
-                    <ng-content *ngFor="let item of skill.programming">
-                        <div class="col-span-4 mt-3">
-                            <img class="skill-logo" src="{{item.image}}" alt="">
+                    <h2 class="col-span-12 flex justify-center font-bold">{{ skill.header }}</h2>
+                    <ng-content *ngFor="let item of skill.list">
+                        <div class="col-span-4 mt-3 flex justify-center">
+                            <img class="img-logo" src="{{item.image}}" alt=""><br>
+                        </div>
+                    </ng-content>
+                    <ng-content *ngFor="let item of skill.list">
+                        <div class="col-span-4 mt-3 flex justify-center">
+                            <span>{{item.languagues}}</span>
                         </div>
                     </ng-content>
                 </div>
-            </ng-container>
+            </ng-template>
+        </p-carousel> -->
+        <div class="col-span-4 flex items-center justify-center">
+            <div class="grid grid-cols-12 cardProgram">
+                <h2 class="col-span-12 flex justify-center font-bold">Programming Languages</h2>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/angularLogo.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/nodeLogo.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/typescriptLogo.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>Angular</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>NodeJS</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>TypeScript</span>
+                </div>
+                <div class="col-span-4 mt-5 flex justify-center">
+                    <img class="img-logo" src="assets/javascriptLogo.png" alt="">
+                </div>   
+                
+                <div class="col-span-4 mt-5 flex justify-center">
+                    <img class="img-logo" src="assets/htmlLogo.png" alt="">
+                </div>
+                <div class="col-span-4 mt-5 flex justify-center">
+                    <img class="img-logo" src="assets/css.png" alt="">
+                </div>  
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>javaScript</span>
+                </div>     
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>HTML</span>
+                </div> 
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>CSS</span>
+                </div> 
+            </div>
         </div>
+        <div class="col-span-4 flex items-center justify-center">
+            <div class="grid grid-cols-12 cardProgram">
+                <h2 class="col-span-12 flex justify-center font-bold">DATABASE</h2>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/mongodb.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/mySQL.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/postgresql.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>mongoDB</span>
+                </div>     
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>mySQL</span>
+                </div> 
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>PostgreSQL</span>
+                </div> 
+                <div class="col-span-12 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/sqlserver.png" alt="">
+                </div>
+                <div class="col-span-12 mt-3 flex justify-center">
+                    <span>SQL Server</span>
+                </div> 
+            </div>
+        </div>
+        <div class="col-span-4 flex items-center justify-center">
+            <div class="grid grid-cols-12 cardProgram">
+                <h2 class="col-span-12 flex justify-center font-bold">TOOLS & OTHERS</h2>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/gitlab.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/github.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/postman.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>gitlab</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>github</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>postman</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/jira.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/jenkins.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/confluence.png" alt="">
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>jira</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>jenkins</span>
+                </div>
+                <div class="col-span-4 mt-3 flex justify-center">
+                    <span>confluence</span>
+                </div>
+                <div class="col-span-12 mt-3 flex justify-center">
+                    <img class="img-logo" src="assets/trello.png" alt="">
+                </div>
+                <div class="col-span-12 mt-3 flex justify-center">
+                    <span>trello</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

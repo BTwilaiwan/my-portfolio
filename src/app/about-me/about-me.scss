@@ -1,12 +1,12 @@
 
 .img-circle{
-    width: 80%;    
-    height: 80%;    
-    border-radius: 50%;
-    object-fit: cover; 
-    display: block; 
-    padding: 10px;
-    border: 2px solid var(--color-light-beige);
+  width: 80%;    
+  height: 80%;    
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block; 
+  padding: 10px;
+  border: 2px solid var(--color-light-beige);
 }
 
 .gradient-text {
@@ -17,11 +17,11 @@
 }
 
 .text-dark-light {
-    color: var(--color-text-dark-light);
+  color: var(--color-text-dark-light);
 }
 
 .gradient-btn- {
-    background: linear-gradient(90deg, var(--color-text-purple), var(--color-text-pink));
+  background: linear-gradient(90deg, var(--color-text-purple), var(--color-text-pink));
 }
 
 html {
