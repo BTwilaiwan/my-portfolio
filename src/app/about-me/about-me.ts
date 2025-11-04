@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { experience, fullname } from '../shared/model/about-me/about-me';
+import { experience, fullname } from '../shared/model/about-me';
 import { sharedImports } from '../shared/shared-imports';
 // import { SkillToolsComponent } from '../skill-tools/skill-tools';
 

@@ -21,9 +21,15 @@ span {
 
 .menu-bar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    position: sticky;   
     top: 0;
-    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    z-index: 99 !important;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: var(--transition);
 }
 
 li { cursor: pointer }

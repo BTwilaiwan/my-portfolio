@@ -3,10 +3,13 @@ import { Component, signal } from '@angular/core';
 import { NavBarComponent } from './component/nav-bar/nav-bar';
 import { AboutMeComponent } from "./about-me/about-me";
 import { SkillToolsComponent } from "./skill-tools/skill-tools";
+import { Project } from "./project/project";
+import { Experience } from "./experience/experience";
+import { Contact } from "./contact/contact";
 
 @Component({
   selector: 'app-root',
-  imports: [NavBarComponent, AboutMeComponent, SkillToolsComponent],
+  imports: [NavBarComponent, AboutMeComponent, SkillToolsComponent, Project, Experience, Contact],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -24,10 +24,6 @@ export class NavBarComponent {
     onNavigate(route: any) {
         this.router.navigate([`/${route}`])
     }
-
-    onLink(link: string) {
-        if ( link === 'skillTool' ) this.aboutMeComponent.scrollToSection();
-    }
     
     scrollToSection(sectionId: string) {
         const section = document.getElementById(sectionId);
