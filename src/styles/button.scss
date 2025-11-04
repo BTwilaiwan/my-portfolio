@@ -9,3 +9,39 @@ mat-toolbar button.mat-button-pink:hover {
     background-color: var(--color-pastel-rose) !important;
     color: var(--color-primary-light) !important;
 }
+
+p-button {
+    font-weight: 600;
+}
+
+p-button.btn-beige > button {
+    background: var(--color-light-beige);
+    color: var(--color-primary);
+    border: var(--color-light-beige);
+}
+
+p-button.btn-pinkPastel > button {
+    background: linear-gradient(90deg, var(--color-pastel-rose) 0%, var(--color-pastel-purple) 100%);
+    box-shadow: 0 4px 6px #cdb4dbe9;
+    color: var(--color-primary);
+    border: var(--color-light-beige);
+}
+
+:root {
+    p-button.btn-beige > button:hover {
+        background: var(--color-light-beige-hover);
+        color: var(--color-primary);
+        border: var(--color-light-beige-hover);
+    } 
+    
+    p-button.btn-pinkPastel > button:hover {
+        background: linear-gradient(90deg, #f4c2c2ec 0%, #cdb4dbe9 100%);
+        box-shadow: 0 4px 6px #cdb4dbcd;
+        color: var(--color-primary);
+        border: var(--color-light-beige);
+    }
+}
+
+button i {
+    font-size: 24px;
+}

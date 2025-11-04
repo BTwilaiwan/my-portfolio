@@ -1,11 +1,10 @@
+@use './styles/button' as *;
+@use '@fortawesome/fontawesome-free/css/all.min.css' as *;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Angular Material theme import */
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
-
-@import './styles/button.scss';
 
 html, body { height: 100%; }
 body { 
@@ -13,4 +12,5 @@ body {
     color: var(--color-primary-light);
     font-size: 16px;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: var(--color-primary);
 }
