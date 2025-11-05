@@ -6,3 +6,55 @@
     box-shadow: 0 4px 6px #cdb4dbe9;
    
 }
+
+.cardProgram {
+    color: #3b82f6;
+    background: linear-gradient(130deg, color-mix(in oklab, #3b82f6 24%, transparent) 0%,
+    color-mix(in oklab, #3b82f6 18%, #3b83f63a) 48%, transparent 100%);
+    border: 1px solid color-mix(in oklab, #3b82f6 22%, #ffffff14);
+    box-shadow: 0 30px 70px -36px color-mix(in oklab, #3b82f6 20%, #040a18b8);
+}
+
+.cardDb {
+    color: #f472b6;
+    background: linear-gradient(130deg, color-mix(in oklab, #f472b6 24%, transparent) 0%,
+    color-mix(in oklab, #f472b6 9.9%, #f472b544) 48%, transparent 100%);
+    border: 1px solid color-mix(in oklab, #f472b6 22%, #ffffff24);
+    box-shadow: 0 30px 70px -36px color-mix(in oklab, #f472b6 20%, #040a18b8);
+
+}
+
+.cardTool {
+    color: #10b981;
+    background: linear-gradient(130deg, color-mix(in oklab, #10b981 24%, transparent) 0%,
+    color-mix(in oklab, #10b981 18%, #10b9813e) 48%, transparent 100%);
+    border: 1px solid color-mix(in oklab, #10b981 22%, #ffffff14);
+    box-shadow: 0 30px 70px -36px color-mix(in oklab, #10b981 20%, #040a18b8);
+}
+
+.tagBlue {
+    color: #3b82f6;
+    border-color: color-mix(in oklab, #3b82f6 55%, transparent);
+    background: color-mix(in oklab, #3b82f6 12%, transparent);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+
+}
+
+.tagGreen {
+    color: #10b981;
+    border-color: color-mix(in oklab, #10b981 55%, transparent);
+    background: color-mix(in oklab, #10b981 12%, transparent);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.tagPink {
+    color: #f472b6;
+    border-color: color-mix(in oklab, #f472b6 55%, transparent);
+    background: color-mix(in oklab, #f472b6 12%, transparent);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+}

@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
 import { AboutMeComponent } from '../../about-me/about-me';
 
 import { MenubarModule } from 'primeng/menubar';
@@ -15,15 +14,9 @@ export class NavBarComponent {
     @ViewChild('aboutMeComponent') aboutMeComponent!: AboutMeComponent;
     public items: any[] = [];
 
-    constructor(
-        private router: Router
-    ) {}
+    constructor() {}
 
     ngOnInit() {}
-    
-    onNavigate(route: any) {
-        this.router.navigate([`/${route}`])
-    }
     
     scrollToSection(sectionId: string) {
         const section = document.getElementById(sectionId);

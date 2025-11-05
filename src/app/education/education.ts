@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { education } from '../shared/model/education'
+
 @Component({
   selector: 'app-education',
   imports: [],

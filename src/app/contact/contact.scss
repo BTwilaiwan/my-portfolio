@@ -1,0 +1,17 @@
+.contact {
+    background: var(--color-gray);
+    border-top: 1px solid var(--color-light-beige);
+    color: #ffffffa8;
+    padding: 20px 100PX;
+    li {
+        cursor: pointer;
+    }
+    li:hover {
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+}
+
+.lineEnd {
+    border-bottom: 1px solid var(--color-light-beige);
+}

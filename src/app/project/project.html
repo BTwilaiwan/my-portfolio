@@ -1,1 +1,16 @@
-<p>project works!</p>
+<div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 pt-[100px]">
+    <h1 class="col-span-12 flex justify-center items-center font-bold">Project</h1>
+    <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+        <ng-template #header>
+            <img alt="Card" class="w-full" src="assets/todolist.png" />
+        </ng-template>
+        <ng-template #title> To Do List </ng-template>
+        <li>Create Tasks: Add new tasks with titles, priority, descriptions due date and status.</li>
+        <li>Edit Tasks: Edit tasks with titles, priority, descriptions due date and status.</li>
+        <li>Delete Tasks: Delete unwanted tasks.</li>
+        <li>Checkbox: Only tasks that are not in completed status can be marked.</li>
+        <li>Update Status: Update the status of the task that has been checked to completed.</li>
+        <li>Search: Search by Task code, Status or priority.</li>
+        <li>Clear: Clear the selected dropdown.</li>
+    </p-card>
+</div>

@@ -1,0 +1,18 @@
+.cardEducate {
+    width: 500px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background: linear-gradient(130deg, color-mix(in oklab, #f6643b 24%, transparent) 0%,
+    color-mix(in oklab, #f6643b 18%, #f6643b56) 48%, transparent 100%);
+    border: 1px solid color-mix(in oklab, #f6643b 22%, #ffffff14);
+    box-shadow: 0 30px 70px -36px color-mix(in oklab, #f6643b 20%, #040a18b8);
+}
+
+.tagEducate {
+    color: #f6643b;
+    border-color: color-mix(in oklab, #f6643b 55%, transparent);
+    background: color-mix(in oklab, #f6643b 12%, transparent);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+}

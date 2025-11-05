@@ -32,15 +32,32 @@ span {
     transition: var(--transition);
 }
 
-li { cursor: pointer }
+li { 
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-steel-blue);
+    border-color: color-mix(in oklab, var(--color-steel-blue) 55%, transparent);
+    background: color-mix(in oklab, var(--color-steel-blue) 12%, transparent);
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
+}
 
-li:hover { 
-  color: var(--color-light-beige);
-  text-decoration: none;
+li:hover {
+    // color: var(--color-light-beige);
+    text-decoration: none;
+    color: #DBD0BE;
+    border-color: color-mix(in oklab, #DBD0BE 55%, transparent);
+    background: linear-gradient(135deg, #DBD0BE 0%, #dbd0be74 50%);
+    // background: color-mix(in oklab, #DBD0BE 12%, transparent);
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
 }
 
 .p-menubar {
-    background: radial-gradient(circle at center, var(--color-aqua-gray) 0%, var(--color-steel-blue) 45%, var(--color-primary) 100%);
+    // background: radial-gradient(circle at center, var(--color-aqua-gray) 0%, var(--color-steel-blue) 45%, var(--color-primary) 100%);
+    background: var(--color-primary);
     border: 1px solid var(--color-primary);
     color: var(--color-primary-light);
     height: 80px;

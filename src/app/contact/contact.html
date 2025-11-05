@@ -1,1 +1,31 @@
-<p>contact works!</p>
+<div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 contact">
+    <!-- <h1 class="col-span-12 flex justify-center items-center font-bold mb-2">Contact</h1> -->
+    <div class="col-span-6">
+        <!-- <div class="flex justify-start font-bold">
+            <h2 class="mr-3">{{education.sinceDate}}</h2>
+            <h2>{{education.level}}</h2>
+        </div>
+        <h3>{{education.university}}</h3>
+        <span>{{education.faculty}}</span><br>
+        <span>GPA: 2.60</span> -->
+    </div>
+    <div class="col-span-3">
+        <ul>
+            <li (click)="scrollToSection('aboutMe')"><i class="pi pi-user"></i> Abount me</li>
+            <li class="mt-2" (click)="scrollToSection('skillTool')"><i class="pi pi-wrench"></i> Skill & Tools</li>
+            <li class="mt-2" (click)="scrollToSection('experience')"><i class="pi pi-briefcase"></i> Experience</li>
+            <li class="mt-2" (click)="scrollToSection('project')"><i class="pi pi-folder"></i> Project</li>
+            <li class="mt-2" (click)="scrollToSection('education')"><i class="pi pi-book"></i> Education</li>
+        </ul>
+    </div>
+    <div class="col-span-3">
+        <ul>
+            <li (click)="onLink('github')"><i class="pi pi-github"></i> Github</li>
+            <li class="mt-2" (click)="onLink('gmail')"><i class="pi pi-envelope"></i> Gmail</li>
+            <li class="mt-2" (click)="onLink('linkedin')"><i class="pi pi-linkedin"></i> Linkedin</li>
+            <li class="mt-2" (click)="onLink('ig')"><i class="pi pi-instagram"></i> Instagram</li>
+        </ul>
+    </div>
+    <h2 class="lineEnd col-span-12 mt-3"></h2>
+    <h5 class="col-span-12 mt-3">© 2025 Wilaiwan Akharawong. All rights reserved.</h5>
+</div>

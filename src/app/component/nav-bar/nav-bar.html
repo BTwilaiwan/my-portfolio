@@ -7,12 +7,12 @@
     <ng-template #end>
         <div class="bar flex-none">
       <ul class="hidden lg:flex px-1 gap-8 py-4">
-        <li class="about" (click)="scrollToSection('aboutMe')">About me</li>
-        <li class="skill" (click)="scrollToSection('skillTool')">Skill & Tools</li>
-        <li class="experience" (click)="scrollToSection('experience')">Experience</li>
-        <li class="project" (click)="scrollToSection('project')">Project</li>
-        <li class="project" (click)="scrollToSection('education')">Education</li>
-        <li class="contact" (click)="scrollToSection('contact')">Contact</li>
+        <li (click)="scrollToSection('aboutMe')">About me</li>
+        <li (click)="scrollToSection('skillTool')">Skill & Tools</li>
+        <li (click)="scrollToSection('experience')">Experience</li>
+        <li (click)="scrollToSection('project')">Project</li>
+        <li (click)="scrollToSection('education')">Education</li>
+        <li (click)="scrollToSection('contact')">Contact</li>
       </ul>
     </div>
     </ng-template>
